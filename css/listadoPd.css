@@ -1,0 +1,117 @@
+body{
+    font-family: Arial, sans-serif;
+    margin: 0px;
+    padding: 20px;
+}
+h1{
+    text-align: center;
+}
+.producto img{
+    width: 100%;
+    height: auto;
+}
+.producto h2{
+    margin-top: 10px;
+}
+.producto p{
+    margin: 5px 0;
+}
+.producto span{
+    font-weight: bold;
+}
+#listaProductos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: 60px;
+}
+.producto{
+    width: 300px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    flex: 1 0 auto;
+}
+
+/*Estilos para la calificación*/
+#form{
+    width: 250px;
+    margin: 0 auto;
+    height: 50px;
+}
+#form p{
+    text-align: center;
+}
+#form label{
+    font-size: 20px;
+}
+input[type="radio"]{
+    display: none;
+}
+label{
+    color: grey;
+}
+.clasificacion{
+    direction: rtl;
+    unicode-bidi: bidi-override;
+    text-align: right;
+}
+.textoCalificacion{
+    text-align: right;
+}
+label:hover,
+label:hover ~ label{
+    color: orange;
+}
+input[type="radio"]:checked ~ label{
+    color: orange;
+}
+.titulo{
+    margin-top: 100px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color:rgb(250, 214, 220);
+}
+.subtitulo{
+    text-align: center;
+    font-family: cursive;
+}
+/*Estilos para el carrusel*/
+.carrusel{
+    width: 80%; 
+    margin: 0 auto; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.carrusel img{
+    width: 800px; 
+    height: 400px;
+    margin-top: 20px;
+    margin-left: 120px;
+}
+.slick-dots{
+    position: absolute;
+    bottom: 20px; 
+    left: 50%;
+    transform: translateX(-50%);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+.slick-dots li{
+    margin: 0 5px;
+}
+.slick-dots li button{
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: none;
+    background-color: #ccc;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.slick-dots li.slick-active button {
+    background-color: #333;
+}
